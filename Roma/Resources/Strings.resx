@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+	<xsd:element name="root" msdata:IsDataSet="true">
+	  <xsd:complexType>
+		<xsd:choice maxOccurs="unbounded">
+		  <xsd:element name="metadata">
+			<xsd:complexType>
+			  <xsd:sequence>
+				<xsd:element name="value" type="xsd:string" minOccurs="0" />
+			  </xsd:sequence>
+			  <xsd:attribute name="name" use="required" type="xsd:string" />
+			  <xsd:attribute name="type" type="xsd:string" />
+			  <xsd:attribute name="mimetype" type="xsd:string" />
+			  <xsd:attribute ref="xml:space" />
+			</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element name="assembly">
+			<xsd:complexType>
+			  <xsd:attribute name="alias" type="xsd:string" />
+			  <xsd:attribute name="name" type="xsd:string" />
+			</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element name="data">
+			<xsd:complexType>
+			  <xsd:sequence>
+				<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+				<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+			  </xsd:sequence>
+			  <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+			  <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+			  <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+			  <xsd:attribute ref="xml:space" msdata:Ordinal="5" />
+			</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element name="resheader">
+			<xsd:complexType>
+			  <xsd:sequence>
+				<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+			  </xsd:sequence>
+			  <xsd:attribute name="name" type="xsd:string" use="required" />
+			</xsd:complexType>
+		  </xsd:element>
+		</xsd:choice>
+	  </xsd:complexType>
+	</xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+	<value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+	<value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+	<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+	<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- UI Strings -->
+  <data name="AppTitle" xml:space="preserve">
+	<value>ROMA</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+	<value>Search servers by name, IP, or language...</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+	<value>Filters</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+	<value>Refresh</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+	<value>Settings</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+	<value>SERVER</value>
+  </data>
+  <data name="Players" xml:space="preserve">
+	<value>PLAYERS</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+	<value>LANGUAGE</value>
+  </data>
+  <data name="Connection" xml:space="preserve">
+	<value>CONNECTION</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+	<value>Connect</value>
+  </data>
+  <data name="LoadingServers" xml:space="preserve">
+	<value>Loading servers...</value>
+  </data>
+  <data name="FailedToLoadServers" xml:space="preserve">
+	<value>Failed to load servers</value>
+  </data>
+  <data name="ConnectionFailed" xml:space="preserve">
+	<value>Connection Failed</value>
+  </data>
+  <data name="RageMpNotFound" xml:space="preserve">
+	<value>RAGE:MP Not Found</value>
+  </data>
+  <data name="PleaseInstallRageMP" xml:space="preserve">
+	<value>RAGE:MP installation not found. Please install RAGE:MP first.</value>
+  </data>
+  <data name="FailedToLaunchRageMP" xml:space="preserve">
+	<value>Failed to launch RAGE:MP. Make sure RAGE:MP is installed.</value>
+  </data>
+  <data name="LanguageFilter" xml:space="preserve">
+	<value>Language</value>
+  </data>
+  <data name="AllLanguages" xml:space="preserve">
+	<value>All Languages</value>
+  </data>
+  <data name="GamemodeFilter" xml:space="preserve">
+	<value>Gamemode</value>
+  </data>
+  <data name="AllGamemodes" xml:space="preserve">
+	<value>All Gamemodes</value>
+  </data>
+  <data name="HideEmptyServers" xml:space="preserve">
+	<value>Hide empty servers</value>
+  </data>
+  <data name="AutoCloseOnConnect" xml:space="preserve">
+	<value>Auto-close on connect</value>
+  </data>
+  <data name="RageMpPath" xml:space="preserve">
+	<value>RAGE:MP Path</value>
+  </data>
+  <data name="RefreshServerList" xml:space="preserve">
+	<value>Refresh Server List</value>
+  </data>
+  <data name="AppLanguage" xml:space="preserve">
+	<value>Application Language</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+	<value>Close</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+	<value>OK</value>
+  </data>
+  <data name="Flag" xml:space="preserve">
+	<value>FLAG</value>
+  </data>
+  <data name="Roleplay" xml:space="preserve">
+	<value>Roleplay</value>
+  </data>
+  <data name="Freeroam" xml:space="preserve">
+	<value>Freeroam</value>
+  </data>
+  <data name="Racing" xml:space="preserve">
+	<value>Racing</value>
+  </data>
+  <data name="Deathmatch" xml:space="preserve">
+	<value>Deathmatch</value>
+  </data>
+  <data name="Drift" xml:space="preserve">
+	<value>Drift</value>
+  </data>
+</root>

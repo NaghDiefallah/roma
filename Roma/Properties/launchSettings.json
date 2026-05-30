@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Roma (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Roma (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
