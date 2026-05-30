@@ -39,21 +39,18 @@ jobs:
           -c Release `
           -r win-${{ matrix.platform }} `
           -p:Platform=${{ matrix.platform }} `
-          -p:PublishSingleFile=false `
+          -p:PublishSingleFile=true `
           -p:SelfContained=true `
+          -p:IncludeNativeLibrariesForSelfExtract=true `
+          -p:EnableCompressionInSingleFile=true `
           -p:RuntimeIdentifierOverride=win-${{ matrix.platform }} `
           -o publish/Roma-${{ matrix.platform }}
 
-    - name: Create ZIP archive
-      run: |
-        Compress-Archive -Path publish/Roma-${{ matrix.platform }}/* `
-          -DestinationPath Roma-${{ matrix.platform }}.zip
-
-    - name: Upload build artifact
+    - name: Upload single executable
       uses: actions/upload-artifact@v4
       with:
         name: Roma-${{ matrix.platform }}
-        path: Roma-${{ matrix.platform }}.zip
+        path: publish/Roma-${{ matrix.platform }}/Roma.exe
         retention-days: 5
 
   release:
@@ -70,6 +67,12 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         path: artifacts
+
+    - name: Rename executables
+      run: |
+        Move-Item artifacts/Roma-x64/Roma.exe artifacts/Roma-x64.exe
+        Move-Item artifacts/Roma-x86/Roma.exe artifacts/Roma-x86.exe
+      shell: pwsh
 
     - name: Get version
       id: get_version
@@ -92,7 +95,7 @@ jobs:
         prerelease: false
         generate_release_notes: true
         files: |
-          artifacts/Roma-x64/Roma-x64.zip
-          artifacts/Roma-x86/Roma-x86.zip
+          artifacts/Roma-x64.exe
+          artifacts/Roma-x86.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
